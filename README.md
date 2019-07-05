@@ -2,9 +2,7 @@
 springboot整合Hadoop，HDFS相关操作，进击大数据一小步
 
 ##Hadoop 3.1.2安装（仅展示win下安装方式）
-``` 
-安装教程链接：http://note.youdao.com/noteshare?id=5b22302f342ecf12c5a7789208a90238
-``` 
+[Hadoop安装教程链接](http://note.youdao.com/noteshare?id=5b22302f342ecf12c5a7789208a90238)
 
 ## 工程结构
 ``` 
