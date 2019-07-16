@@ -1,5 +1,12 @@
 ## 简介
-springboot整合Hadoop，HDFS相关操作，可以实现最基本的文件操作系统，进击大数据一小步。
+springboot整合Hadoop，进击大数据一小步。
+
+## 功能介绍
+1、hdfs基本操作，实现最基本的文件操作系统  √
+
+2、MapReduce基本操作，实现简单的分词和统计  √
+
+3、yaml基本了解以及操作
 
 ## Hadoop 3.1.2安装（仅展示win下安装方式）
 [Hadoop安装教程链接](http://note.youdao.com/noteshare?id=5b22302f342ecf12c5a7789208a90238)
@@ -16,7 +23,7 @@ hadoop-demo
 └── HadoopDemoApplication.java -- springboot启动类
 ``` 
 
-## 接口功能展示
+## 一、HDFS接口功能展示
 1、查看目录
 ``` 
 GET请求 请求地址: http://127.0.0.1:8080/file/getPathInfo
@@ -92,6 +99,14 @@ form-data参数示例：{"oldName": "/data/用户信息-导入模板.xlsx", "new
 POST请求 请求地址: http://127.0.0.1:8080/file/rmdir
 参数说明：{"path": ${hdfs文件路径}, "fileName": ${文件名称，不填为删除文件夹}}
 form-data参数示例：{"path": "/data", "fileName": "用户信息-导入模板.xlsx"}
+``` 
+
+## 二、MapReduce接口功能展示
+1、单词统计(统计指定key单词的出现次数)
+``` 
+GET请求 请求地址: http://127.0.0.1:8080/reduce/wordCount
+参数说明：{"jobName": ${计划名称}, "inputPath": ${分词路径，如果是文件家路径，则默认分词该文件夹下所有的文件}}
+参数示例：{"jobName": "test", "inputPath": "/fenci"}
 ``` 
 
 ## 提示

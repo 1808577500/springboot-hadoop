@@ -1,4 +1,4 @@
-package com.example.hadoopdemo;
+package com.example.hadoopdemo.hdfs;
 
 import com.example.hadoopdemo.props.HadoopProperties;
 import lombok.AllArgsConstructor;

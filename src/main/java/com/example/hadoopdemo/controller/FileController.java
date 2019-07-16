@@ -1,8 +1,8 @@
 package com.example.hadoopdemo.controller;
 
 import com.example.hadoopdemo.base.BaseResponse;
+import com.example.hadoopdemo.hdfs.HadoopClient;
 import com.example.hadoopdemo.util.FileUtil;
-import com.example.hadoopdemo.HadoopClient;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * hadoop文件操作相关接口
+ * hadoop hdfs文件操作相关接口
  *
  * @author Ruison
  * on 2019/7/4 - 14:15
