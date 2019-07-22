@@ -109,6 +109,41 @@ GET请求 请求地址: http://127.0.0.1:8080/reduce/wordCount
 参数示例：{"jobName": "test", "inputPath": "/fenci"}
 ``` 
 
+HDFS结果查询（指令）
+``` 
+遍历根目录下的文件 
+hadoop fs -ls / 
+
+查看分词结果
+hadoop fs -cat /output/test/part-r-00000
+``` 
+
+2、数据分析（日志为案例）
+
+日志数据为nginx产生的日志，Linux一般存放在/var/log/nginx，自行下载上传到hdfs的/log目录下
+
+日志分析三种指标
+
+① 请求
+
+② 响应结果
+
+③ 请求类型
+``` 
+POST请求 请求地址: 127.0.0.1:8080/analyze/log
+参数说明：{"jobName": ${计划名称}, "inputPath": ${分词路径，如果是文件家路径，则默认分词该文件夹下所有的文件}}
+参数示例：{"jobName": "log", "inputPath": "/log"}
+
+查看请求类型统计
+hadoop fs -cat /output/log-request/part-r-00000
+
+查看响应结果统计
+hadoop fs -cat hadoop fs -cat /output/log-requestStatus/part-r-00000
+
+查看请求类型统计
+hadoop fs -cat /output/log-requestMethod/part-r-00000
+``` 
+
 ## 提示
 此demo只是作为Hadoop学习demo，若有其他请联系作者
 

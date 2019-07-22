@@ -2,6 +2,7 @@ package com.example.hadoopdemo.mapReduce;
 
 import com.example.hadoopdemo.hdfs.HadoopClient;
 import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
@@ -21,10 +22,10 @@ public class MapReduceClient {
     /**
      * 单词统计，统计某个单词出现的次数
      * @param jobName 计划名称
-     * @param inputPath 分词路径，如果是文件家路径，则默认分词该文件夹下所有的文件
-     * @throws Exception 异常
+     * @param inputPath 文件路径，如果是文件家路径，则默认分词该文件夹下所有的文件
      */
-    public void wordCount(String jobName, String inputPath) throws Exception {
+    @SneakyThrows
+    public void wordCount(String jobName, String inputPath) {
         if (StringUtils.isEmpty(jobName) || StringUtils.isEmpty(inputPath)) {
             return;
         }

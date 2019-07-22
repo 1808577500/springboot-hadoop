@@ -10,6 +10,7 @@ import org.wltea.analyzer.core.Lexeme;
 import java.io.*;
 
 /**
+ * 分词
  * @author Ruison
  * on 2019/7/6 - 14:53
  */

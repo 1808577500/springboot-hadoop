@@ -7,6 +7,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 
 /**
+ * 处理Map传入的内容
  * @author Ruison
  * on 2019/7/6 - 15:09
  */

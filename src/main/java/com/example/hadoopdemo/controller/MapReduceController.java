@@ -23,15 +23,14 @@ public class MapReduceController {
 
     /**
      * 单词统计(统计指定key单词的出现次数)
+     *
      * @param jobName 计划名称
-     * @param inputPath 分词路径，如果是文件家路径，则默认分词该文件夹下所有的文件
-     * @return {@link BaseResponse}
-     * @throws Exception 异常
+     * @param inputPath 文件路径，如果是文件家路径，则默认分词该文件夹下所有的文件
+     * @return 响应内容
      */
     @PostMapping("wordCount")
     public BaseResponse wordCount(@RequestParam("jobName") String jobName,
-                                  @RequestParam("inputPath") String inputPath)
-            throws Exception {
+                                  @RequestParam("inputPath") String inputPath) {
         if (StringUtils.isEmpty(jobName) || StringUtils.isEmpty(inputPath)) {
             return BaseResponse.error("请求参数为空");
         }
