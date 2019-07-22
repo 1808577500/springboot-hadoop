@@ -25,7 +25,7 @@ springboot整合Hadoop，进击大数据一小步。
 hadoop-demo
 ├── docs -- 相关文件存放
 ├── src
-|──── analyze -- 数据分析
+├──── analyze -- 数据分析
 ├──── base -- 前端视图基础类
 ├──── config -- hadoop配置类
 ├──── controller -- hdfs操作接口 
@@ -133,7 +133,7 @@ hadoop fs -cat /output/test/part-r-00000
 
 **2、数据分析（日志为案例）**
 
-日志数据为nginx产生的日志，Linux一般存放在/var/log/nginx，自行下载上传到hdfs的/log目录下
+日志数据为nginx产生的日志，Linux一般存放在/var/log/nginx，自行下载上传到hdfs的/log目录下，也可以从项目的docs文件下获取“access.log-20190720”数据文件
 
 日志分析三种指标（案例只列出以下几种指标，可自行分析其他指标）
 
