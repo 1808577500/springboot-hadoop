@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 import java.net.URI;
 
 /**
- * @author Ruison
- * on 2019/7/4 - 10:21
+ * @author zhangcx
+ * on 2020/5/30 - 10:21
  */
 @Configuration
 @ConditionalOnProperty(name="hadoop.name-node")

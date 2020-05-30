@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * MapReduce操作相关接口
- * @author Ruison
- * on 2019/7/6 - 15:21
+ * @author zhangcx
+ * on 2020/5/30 - 15:21
  */
 @RestController
 @RequestMapping("reduce")

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import com.example.hadoopdemo.analyze.LogMapVersion.*;
 
 /**
- * @author Ruison
+ * @author zhangcx
  * on 2019/7/22 - 11:37
  */
 @Component

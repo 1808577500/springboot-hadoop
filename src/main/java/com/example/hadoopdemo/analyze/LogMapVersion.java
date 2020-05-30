@@ -7,7 +7,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import java.io.IOException;
 
 /**
- * @author Ruison
+ * @author zhangcx
  * on 2019/7/22 - 11:17
  */
 public class LogMapVersion {

@@ -16,8 +16,8 @@ import java.util.Map;
 /**
  * hadoop hdfs文件操作相关接口
  *
- * @author Ruison
- * on 2019/7/4 - 14:15
+ * @author zhangcx
+ * on 2020/5/30 - 14:15
  */
 @RestController
 @RequestMapping("file")
@@ -34,6 +34,16 @@ public class FileController {
         hadoopClient.copyFileToHDFS(false, true, FileUtil.MultipartFileToFile(file).getPath(), uploadPath);
         return BaseResponse.ok();
     }
+
+    /**
+     * 上传文件
+     */
+    @PostMapping("uploadTest")
+    public BaseResponse uploadTest(@RequestParam String uploadPath) {
+        hadoopClient.copyFileToHDFS(false, true, "/hadooptest/access.log-20190720", uploadPath);
+        return BaseResponse.ok();
+    }
+
 
     /**
      * 下载文件

@@ -15,6 +15,7 @@ public class HadoopDemoApplication implements CommandLineRunner {
     private final FsShell fsShell;
 
     public static void main(String[] args) {
+        System.setProperty("HADOOP_USER_NAME", "root");
         System.setProperty("hadoop.home.dir", "D:\\IDEA\\hadoop-3.1.2");
         SpringApplication.run(HadoopDemoApplication.class, args);
     }

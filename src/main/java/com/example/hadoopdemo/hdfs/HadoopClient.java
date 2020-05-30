@@ -16,8 +16,8 @@ import java.util.Map;
 
 /**
  * Hadoop 操作类
- * @author Ruison
- * on 2019/7/4 - 10:26
+ * @author zhangcx
+ * on 2020/5/30 - 10:26
  */
 @Slf4j
 @AllArgsConstructor

@@ -8,8 +8,8 @@ import java.io.IOException;
 
 /**
  * 处理Map传入的内容
- * @author Ruison
- * on 2019/7/6 - 15:09
+ * @author zhangcx
+ * on 2020/5/30 - 15:09
  */
 public class WordCountReduce extends Reducer<Text, IntWritable, Text, IntWritable> {
 

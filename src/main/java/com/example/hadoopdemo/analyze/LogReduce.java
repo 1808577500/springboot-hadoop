@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 
 /**
- * @author Ruison
+ * @author zhangcx
  * on 2019/7/22 - 11:22
  */
 @Slf4j

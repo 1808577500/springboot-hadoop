@@ -11,8 +11,8 @@ import java.io.*;
 
 /**
  * 分词
- * @author Ruison
- * on 2019/7/6 - 14:53
+ * @author zhangcx
+ * on 2020/5/30 - 14:53
  */
 public class WordCountMap extends Mapper<Object, Text, Text, IntWritable> {
 
